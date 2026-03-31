@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaWorld | Početna</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html">
+                <img src="images/logoo.png" alt="AquaWorld Logo" class="logo">
+            </a>
+            <nav>
+                <a href="index.html">Početna</a>
+                <a href="login.html">Prijava</a>
+                <a href="checkout.html">Plaćanje</a>
+                <a href="#" onclick="openCart()">Korpa 🛒 <span id="cartCount">0</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Naša Ponuda Akvarijuma</h1>
+        
+        <div class="product-grid">
+            <article class="product-card">
+                <div class="card-img-container">
+                    <img src="images/zlatna.jpg" width="300" height="200" alt="Zlatna Ribica">
+                </div>
+                <h3>Zlatna Ribica</h3>
+                <p>Otporna i laka za održavanje u kućnim uslovima.</p>
+                <span class="price">1.500 RSD</span>
+                <button onclick="addToCart(1500)" class="btn-aqua">DODAJ U KORPU</button>
+                <br>
+                <button onclick="buyNow('Zlatna Ribica', 1500)" class="btn-aqua">KUPI ODMAH</button>
+            </article>
+
+            <article class="product-card">
+                <div class="card-img-container">
+                    <img src="images/tetra.jpg" width="300" height="200" alt="Neon Tetra">
+                </div>
+                <h3>Neon Tetra</h3>
+                <p>Svetlucava egzotična ribica za jata.</p>
+                <span class="price">450 RSD</span>
+                <button onclick="addToCart(450)" class="btn-aqua">DODAJ U KORPU</button>
+                <button onclick="buyNow('Neon Tetra', 450)" class="btn-aqua">KUPI ODMAH</button>
+            </article>
+
+            <article class="product-card">
+                <div class="card-img-container">
+                    <img src="images/akvarijumm.jpg" width="300" height="200" alt="Akvarijum">
+                </div>
+                <h3>Stakleni Akvarijum 50L</h3>
+                <p>Kompletan set sa LED rasvetom i filterom.</p>
+                <span class="price">12.000 RSD</span>
+                <button onclick="addToCart('Stakleni Akvarijum 50L', 12000)" class="btn-aqua">DODAJ U KORPU</button>
+                <button onclick="buyNow('Stakleni Akvarijum 50L', 12000)" class="btn-aqua">KUPI ODMAH</button>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>AquaWorld &copy; 2026 </p>
+        <script src="js/main.js"></script>
+    </footer>
+</body>
+</html>

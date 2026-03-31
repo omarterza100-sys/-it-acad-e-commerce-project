@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plaćanje | AquaWorld</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html"><img src="images/logoo.png" alt="AquaWorld Logo" class="logo"></a>
+            <nav><a href="index.html">Nastavi kupovinu</a></nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="form-box">
+            <h1>Finalizacija kupovine</h1>
+            <form>
+
+                <div class="form-group">
+                    <label>Ime i prezime primaoca</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label>Ulica i broj / Grad</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label>Kontakt telefon</label>
+                    <input type="tel" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label>Promo kod</label>
+                    <input type="text" id="promo-input" class="form-control" placeholder="Promo kod">
+                    <button onclick="validateAndNotify()" class="btn-aqua">Primijeni kod</button>
+                </div>
+
+                <div class="checkout-summary">
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>Vaša porudžbina:</span>
+                        <strong>1x Zlatna Ribica</strong>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-top: 0.5rem;">
+                        <span>Ukupno za uplatu:</span>
+                        <span class="price" style="margin:0">1.500 RSD</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-aqua">POTVRDI I NARUČI</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>AquaWorld &copy; 2026 </p>
+        <script src="js/main.js"></script>
+    </footer>
+</body>
+</html>
